@@ -3,7 +3,6 @@ from settings import valid_email, valid_password
 
 pf = PetFriends()
 
-# Статус и результат получения get
 status, result = pf.get_api(valid_email, valid_password)
 print(status, result)
 
