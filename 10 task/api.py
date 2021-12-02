@@ -27,13 +27,11 @@ class PetFriends:
 			name: str,
 			animal_type: str,
 			age: str,
-			# pet_photo: str
 			) -> json:
 			data = MultipartEncoder(
 				fields={'name': name,
 				'animal_type': animal_type,
 				'age': age,
-				# 'pet_photo': (pet_photo, open(pet_photo, 'rb'), 'image/jpeg')
 				})
 			headers = {
 				'auth_key': auth_key['key'], 
