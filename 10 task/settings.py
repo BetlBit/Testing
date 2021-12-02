@@ -1,6 +1,6 @@
 # Тут все личные данные для запросов
 
-valid_email = "inthebetmen@mail.ru"
-valid_password = "A1S4D3A1S4D3#1"
-not_valid_email = "gggggggggggggg612134@mail.com"
-not_valid_password = "612"
+valid_email = # Тут твоя почта (логин) от https://petfriends1.herokuapp.com/
+valid_password = # Тут пароль от этого же сайта
+not_valid_email = "gggggggggggggg612134@mail.com" #Здесь ложный мейл
+not_valid_password = "612" #И ложный пароль
