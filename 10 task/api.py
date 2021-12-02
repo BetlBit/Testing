@@ -1,5 +1,3 @@
-# Здесь все методы описаны
-
 import json
 import requests
 from requests_toolbelt import MultipartEncoder
@@ -8,7 +6,6 @@ class PetFriends:
 		def __init__(self):
 			self.base_url = "https://petfriends1.herokuapp.com/"
 
-# Метод получения ключа GET
 		def get_api(self,
 			email: str,
 			password: str) -> json:
@@ -25,14 +22,11 @@ class PetFriends:
 						result = res.text
 				return status, result
 
-# Метод отправки данных POST
 		def post_pet(self, 
 			auth_key: json,
 			name: str,
 			animal_type: str,
 			age: str,
-			# Скрыл фото питомца, потому что не знаю, как его добавить в карточку питомца (делай через https://petfriends1.herokuapp.com/apidocs/#/)
-			# Там костыль есть, когда можешь вручную вписывать данные в поле ввода и затем все данные отправятся в карточку питомца на https://petfriends1.herokuapp.com/all_pets
 			# pet_photo: str
 			) -> json:
 			data = MultipartEncoder(
@@ -54,7 +48,6 @@ class PetFriends:
 					result = res.text
 			return status, result
 
-# Удалить карточку питомца
 		def delete_pet(self, 
 			auth_key: json, 
 			pet_id: int) -> json:
@@ -69,7 +62,6 @@ class PetFriends:
 					result = res.text
 				return status, result
 
-# Обновление информации в карточке питомца
 		def put_pet(self,
 			auth_key: json,
 			pet_id: str,
